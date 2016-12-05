@@ -6,14 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://sfwn.online">
-  <title>sfwn online</title>
+  <title>Git 查看 某一个文件某一行 的提交记录 | sfwn online</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="sfwn online">
-<meta property="og:url" content="http://sfwn.online/index.html">
+  <meta name="description" content="$ git blame /path/to/file使用该命令查看某一文件每一行最后一次提交的记录，找出最有可能的接锅侠。如果只想看特定的几行，可以使用:$ git blame /path/to/file -L 15,15 只查看第15行，或者使用:$ git blame /path/to/file -L 15,+11 来查看从 15 到 (15+11-1)=25 行的 blame。
+$ git l">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Git 查看 某一个文件某一行 的提交记录">
+<meta property="og:url" content="http://sfwn.online/2016/12/06/git-show-line-history/index.html">
 <meta property="og:site_name" content="sfwn online">
+<meta property="og:description" content="$ git blame /path/to/file使用该命令查看某一文件每一行最后一次提交的记录，找出最有可能的接锅侠。如果只想看特定的几行，可以使用:$ git blame /path/to/file -L 15,15 只查看第15行，或者使用:$ git blame /path/to/file -L 15,+11 来查看从 15 到 (15+11-1)=25 行的 blame。
+$ git l">
+<meta property="og:updated_time" content="2016-12-05T17:14:07.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="sfwn online">
+<meta name="twitter:title" content="Git 查看 某一个文件某一行 的提交记录">
+<meta name="twitter:description" content="$ git blame /path/to/file使用该命令查看某一文件每一行最后一次提交的记录，找出最有可能的接锅侠。如果只想看特定的几行，可以使用:$ git blame /path/to/file -L 15,15 只查看第15行，或者使用:$ git blame /path/to/file -L 15,+11 来查看从 15 到 (15+11-1)=25 行的 blame。
+$ git l">
   
     <link rel="alternative" href="/atom.xml" title="sfwn online" type="application/atom+xml">
   
@@ -128,16 +135,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-git-show-line-history" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-git-show-line-history" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/12/06/git-show-line-history/">Git 查看 某一个文件某一行 的提交记录</a>
+    <h1 class="article-title" itemprop="name">
+      Git 查看 某一个文件某一行 的提交记录
     </h1>
   
 
@@ -161,26 +166,71 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/12/06/git-show-line-history/#more">show all >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://sfwn.online/2016/12/06/git-show-line-history/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
 
-
-
-
-
-
-
-
   
-  
+
+
+
+
+
+
 
 
           </div>
@@ -202,8 +252,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
