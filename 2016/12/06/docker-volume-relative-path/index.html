@@ -6,14 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://sfwn.online">
-  <title>sfwn online</title>
+  <title>docker volume (docker run -v) 使用相对路径 | sfwn online</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="sfwn online">
-<meta property="og:url" content="http://sfwn.online/index.html">
+  <meta name="description" content="我对 docker volume 也不是很了解，只是在 docker run -v 时使用到。
+昨天遇到一个场景，我想要将 /Users/sfwn/workspace/tmp 目录挂载到容器里面作为临时输出文件夹，于是我使用下面的命令：12$ cd ~/workspace$ docker run --rm -it --name test -v tmp:/var/output image1:0.0.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="docker volume (docker run -v) 使用相对路径">
+<meta property="og:url" content="http://sfwn.online/2016/12/06/docker-volume-relative-path/index.html">
 <meta property="og:site_name" content="sfwn online">
+<meta property="og:description" content="我对 docker volume 也不是很了解，只是在 docker run -v 时使用到。
+昨天遇到一个场景，我想要将 /Users/sfwn/workspace/tmp 目录挂载到容器里面作为临时输出文件夹，于是我使用下面的命令：12$ cd ~/workspace$ docker run --rm -it --name test -v tmp:/var/output image1:0.0.">
+<meta property="og:updated_time" content="2016-12-06T15:34:08.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="sfwn online">
+<meta name="twitter:title" content="docker volume (docker run -v) 使用相对路径">
+<meta name="twitter:description" content="我对 docker volume 也不是很了解，只是在 docker run -v 时使用到。
+昨天遇到一个场景，我想要将 /Users/sfwn/workspace/tmp 目录挂载到容器里面作为临时输出文件夹，于是我使用下面的命令：12$ cd ~/workspace$ docker run --rm -it --name test -v tmp:/var/output image1:0.0.">
   
     <link rel="alternative" href="/atom.xml" title="sfwn online" type="application/atom+xml">
   
@@ -132,16 +139,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-docker-volume-relative-path" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-docker-volume-relative-path" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/12/06/docker-volume-relative-path/">docker volume (docker run -v) 使用相对路径</a>
+    <h1 class="article-title" itemprop="name">
+      docker volume (docker run -v) 使用相对路径
     </h1>
   
 
@@ -184,81 +189,81 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/12/06/docker-volume-relative-path/">show all >></a>
-        </p>
-      
 
       
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-git-show-line-history" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/12/06/git-show-line-history/">Git 查看 某一个文件某一行 的提交记录</a>
-    </h1>
-  
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
 
-        <a href="/2016/12/06/git-show-line-history/" class="archive-article-date">
-  	<time datetime="2016-12-05T17:21:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-06</time>
-</a>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="git-blame-path-to-file"><a href="#git-blame-path-to-file" class="headerlink" title="$ git blame /path/to/file"></a>$ git blame /path/to/file</h3><p>使用该命令查看某一文件每一行最后一次提交的记录，找出最有可能的接锅侠。<br>如果只想看特定的几行，可以使用:<br><code>$ git blame /path/to/file -L 15,15</code> 只查看第15行，<br>或者使用:<br><code>$ git blame /path/to/file -L 15,+11</code> 来查看从 15 到 (15+11-1)=25 行的 blame。</p>
-<h3 id="git-log-L15-15-path-to-file"><a href="#git-log-L15-15-path-to-file" class="headerlink" title="$ git log -L15,15:/path/to/file"></a>$ git log -L15,15:/path/to/file</h3><p>如果你对其中某一行特别感兴趣，比如第15行，想查看他的所有记录，可以使用上述命令。<br><em>注意</em> : 就算文件被 rename 过，上述命令也会搜索第15行原始文件中的记录。</p>
-
-      
-
-      
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://sfwn.online/2016/12/06/docker-volume-relative-path/" alt="微信分享二维码">
     </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li></ul>
-	</div>
+</div>
 
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/12/06/git-show-line-history/">show all >></a>
-        </p>
-      
-
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
 
-
-
-
-
-
-
-
+  
+<nav id="article-nav">
   
   
+    <a href="/2016/12/06/git-show-line-history/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Git 查看 某一个文件某一行 的提交记录</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+
 
 
           </div>
@@ -280,8 +285,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
